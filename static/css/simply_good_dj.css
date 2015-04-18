@@ -1,0 +1,171 @@
+.navbar, .navbar-default {
+    padding-top: 30px;
+    height: 800px;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.25) 0%,rgba(255,255,255,0.25) 100%),
+        /*url("{% static "images/simply-good-home-low.jpeg" %}") no-repeat center center fixed  ;*/
+        url("/static/images/simply-good-home-low.jpeg") no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+/*URL to image: https://unsplash.com/photos/hv1MrBzGGNY/download*/
+
+.home-main {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin: 0 auto;
+    width: 75%;
+}
+
+#home-brand {
+    font-size: 80px;
+    padding-top: 50px;
+}
+
+#home-tag-line {
+    font-size: 48px;
+    margin: 0 auto;
+    padding: 200px 0 100px 0;
+}
+
+#home-register-btn {
+    background-image: linear-gradient(to bottom, #F9B31C 0px, #FF9900 100%);
+    border-color: #F9B31C;
+    background-color: #F9B31C;
+    margin-right: 20px;
+}
+
+#home-login-btn {
+    margin-left: 10px;
+}
+
+.home-main small {
+    font-size: 16px;
+}
+
+.home-main h4 {
+    padding-top: 30px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.home-main h4 a {
+    color: white;
+    font-size: 18px;
+}
+
+.modal-form .modal-dialog {
+    color: grey;
+    /*text-align: left;*/
+    width: 30%;
+}
+
+#register-modal {
+    text-align: left;
+}
+
+#login-modal {
+    text-align: center;
+}
+
+/*#home-signup {*/
+    /*color: grey;*/
+    /*margin: 0 auto;*/
+    /*text-align: center;*/
+/*}*/
+
+
+#content-block-style {
+    padding-top: 80px;
+    font-size: 18px;
+}
+
+#content-block-style input {
+    color: black;
+}
+
+/* messages styling*/
+.messages li {
+    color: green;
+    list-style-type: none;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+/* */
+#login-login-btn {
+    padding-top: 20px;
+}
+#logout-btn-container {
+    text-align: right;
+}
+
+#logout-btn {
+    border: 1px solid #FFF;
+    color: #FFF;
+    background: none repeat scroll 0 0 transparent;
+}
+
+/*#home-two {*/
+    /*background: linear-gradient(to bottom, rgba(255,255,255,0.25) 0%,rgba(255,255,255,0.25) 100%),*/
+    /*url("https://unsplash.com/photos/FjjUVn_KHLU/download") no-repeat center fixed;*/
+    /*background-size: cover;*/
+/*}*/
+
+#home-two {
+    font-family: 'Montserrat', sans-serif;
+    width: 40%;
+    text-align: left;
+    margin: 0 auto;
+    color: #FFF;
+}
+
+.home-two-copy {
+    font-size: 20px;
+    padding: 20px 0 20px 0;
+}
+
+/*#home-three-container {*/
+    /*background: linear-gradient(to bottom, rgba(255,255,255,0.25) 0%,rgba(255,255,255,0.25) 100%),*/
+    /*url("http://sweetgreen.com/content/uploads/2014/07/tumblr-header-7.9-1.gif") no-repeat center fixed;*/
+/*}*/
+
+#home-three {
+    font-family: 'Montserrat', sans-serif;
+    width: 40%;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.home-three-copy {
+    font-size: 20px;
+    padding: 20px 0 20px 0;
+    color: #FFF;
+}
+
+#pp-nav li .active span, .pp-slidesNav .active span {
+    background: none repeat scroll 0 0 #FFF;
+}
+
+.form-fields {
+    font-size: 20px;
+    padding: 10px 0 10px 10px;
+}
+
+.form-fields label {
+    font-weight: 100;
+}
+
+.form-fields span {
+    padding-right: 5px;
+}
+
+#signup-submit-btn {
+    margin-left: 10px;
+}
+
+.login-form-field {
+    font-size: 18px;
+    margin: 5px 0 5px 0;
+}

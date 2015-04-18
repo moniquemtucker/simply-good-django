@@ -1,0 +1,51 @@
+{% extends 'diary/base_diary.html' %}
+
+{% block title %} simply good. diary. {% endblock title %}
+
+{% block content %}
+
+         <div id="diary-contents">
+             <div id="diary-calendar">
+              <h2>{{ username }}'s diary  <span class="fa fa-cutlery"></span></h2>
+              <hr/>
+              <div class="date-picker" data-keyboard="false">
+                <div class="date-container pull-left">
+                    <h4 class="weekday" id="weekday-cal">Friday</h4>
+                    <h2 class="date" id="date-cal">November 7th</h2>
+                    <h4 class="year pull-right" id="year-cal">2014</h4>
+                </div>
+                <span data-toggle="datepicker" data-type="subtract" class="ionicons ion-arrow-left-b" id="left-cal"></span>
+                <span data-toggle="datepicker" data-type="add" class="ionicons ion-arrow-right-b" id="right-cal"></span>
+                <div class="input-group input-datepicker">
+                    <input type="text" class="form-control" data-format="YYYY/MM/DD" placeholder="YYYY/MM/DD">
+                    <span class="input-group-btn">
+                        <button class="btn btn-warning" type="button" id="date-btn">Go!</button>
+                    </span>
+              </div>
+              <span data-toggle="calendar" class="fa fa-calendar" id="choose-cal"></span>
+            </div>
+          </div>
+
+        <ul id="diary-wf">
+          <li>whole foods</li>
+          <li><span class="ionicons ion-plus add-portion-wf"></span></li>
+          <li><span class="ionicons ion-minus remove-portion-wf"></span></li>
+          {% for food in whole_foods %}
+          <li class='wf-portion'><span class='ionicons ion-ios7-tennisball-outline'></span></li>
+          {% endfor %}
+        </ul>
+        <ul id="diary-pf">
+          <li>processed foods</li>
+          <li><span class="ionicons ion-plus add-portion-pf"></span></li>
+          <li><span class="ionicons ion-minus remove-portion-pf"></span></li>
+          {% for food in processed_foods %}
+          <li class='pf-portion'><span class='ionicons ion-ios7-tennisball-outline'></span></li>
+          {% endfor %}
+        </ul>
+        <div id="diary-notes"><p>notes</p>
+          <textarea rows="2" cols="20" id="notes" placeholder="Take any notes to help you remember this day..."
+                       wrap="hard" style="width:500px; font-size: 16px; color: black" >{{ notes }}</textarea>
+             <!--<p id="login-login-btn"><input type="submit" class="btn btn-warning" value="save entry" /></p>-->
+          </div>
+      </div>
+{% endblock content %}

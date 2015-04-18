@@ -1,0 +1,51 @@
+
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block sign_up %}
+
+<!--<form method="POST" action=''>-->
+  <!--{% csrf_token %}-->
+  <!--{{ form.as_p }}-->
+  <!--<input type='submit' value='sign up'>-->
+<!--</form>-->
+       <div class="modal fade modal-crispy" id="signup-modal" tabindex="-1" role="dialog"
+            aria-labelledby="basicModal" aria-hidden="true">
+         <div class="modal-dialog">
+           <div class="modal-content">
+             <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+               <h4 class="modal-title">sign up for simply good</h4>
+             </div>
+            <div class="modal-body">
+              {% crispy form %}
+            </div>
+           </div>
+         </div>
+       </div>
+
+    <!--<div class="container">-->
+      <!--<div class="row">-->
+        <!--crispy form-->
+      <!--</div>-->
+    <!--</div>-->
+        <!--<div class="row">-->
+            <!--<div class="col-xs-6 col-sm-6 col-md-6">-->
+                <!--<div class="form-group">-->
+            <!--<input type="text" name="first_name" id="first-name" class="form-control input-sm" placeholder="First Name">-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+
+
+
+
+{% if messages %}
+<ul class="messages">
+    {% for message in messages %}
+    <li>{% if message.tags %} {% endif %}{{ message }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+
+{% endblock sign_up %}

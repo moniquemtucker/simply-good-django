@@ -1,0 +1,22 @@
+{% extends 'diary/base_diary.html' %}
+{% block head %}
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="http://code.highcharts.com/highcharts.js"></script>
+<script src="ck/static/chartkick.js"></script>
+{% endblock head %}
+
+
+{% block title %} simply good. diary trends. {% endblock title %}
+
+{% block content %}
+
+<div id="trends-container">
+<div id="chart-container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+</div>
+
+
+
+
+
+{% endblock content %}

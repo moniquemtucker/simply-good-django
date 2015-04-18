@@ -1,0 +1,34 @@
+__TO DO LIST FOR SIMPLY GOOD__
+
+FEATURES
+-- Ability to add portion size and save to database x
+    * Elements appear and disappear as date changes x
+    * When a new user is created-- on the initial date the diary entry is not found. WORKED THIS MORNING...
+        -- has something to do with TODAY'S DATE??
+    * when you log back into your account on the same day, the data is not showing!!
+        -- look at making for loop on django template to draw DOM elements
+-- Ability to remove portion size and save to database
+-- Ability to save diary entries based on date x
+-- Ability to view weekly trend
+
+TO ADD
+-- Change to be 1/4 through 1 portion size
+-- Testing
+-- Move to PostgreSQL
+-- Add more notes to code
+
+STYLING
+-- Change the flow of navigating the page
+-- Change the registration form layout
+-- Change the login form layout
+-- Change where the logout buttons are
+-- Change the profile layout
+-- Change the diary layout
+-- Responsive design
+
+ADDITIONAL
+-- Add description of app on the homepage
+-- Add help/guidelines page
+
+NICE TO HAVES
+-- "Forget password" option

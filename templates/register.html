@@ -1,0 +1,47 @@
+{% extends 'basethree.html' %}
+
+{% block content %}
+
+
+<div class="modal fade modal-form" id="register-modal" role="dialog">
+ <div class="modal-dialog">
+   <div class="modal-content">
+     <div class="modal-header">
+       <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+       <h4 class="modal-title form-header" aria-labelledby="myModalLabel">sign up for simply good</h4>
+     </div>
+    <div class="modal-body">
+    {{ form.non_field_errors }}
+<form action="" method="post">
+    {% csrf_token %}
+    <div class="fieldWrapper form-fields">
+    {{ form.username.errors }}
+    <label for="id_username"><span class="fa fa-user"></span></label>
+    {{ form.username }}
+    </div>
+    <div class="fieldWrapper form-fields">
+    {{ form.email.errors }}
+    <label for="id_email"><span><i class="fa fa-envelope"></i></span></label>
+    {{ form.email }}
+    </div>
+    <div class="fieldWrapper form-fields">
+    {{ form.password1.errors }}
+    <label for="id_password1">create a password <span class="fa fa-lock"></span></label>
+    {{ form.password1 }}
+    </div>
+    <div class="fieldWrapper form-fields">
+    {{ form.password2.errors }}
+    <label for="id_password2">confirm password</label>
+    {{ form.password2 }}
+    </div>
+<input type="submit" class="btn btn-warning" value="submit" id="signup-submit-btn" />
+
+</form>
+
+    </div>
+   </div>
+ </div>
+</div>
+
+
+{% endblock content %}
